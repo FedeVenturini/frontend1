@@ -1,38 +1,68 @@
 body{
     font-family: 'Times New Roman', Times, serif;
 }
-#title{
-    background-color: #C4C4C4;
-    color: #005677;
-    font-feature-settings: "cpsp" on;
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 700, bold;
-    line-height: 84.69%;
-    text-align: center;
+
+.logofoot{
+    width: 20px;
+    height: 20px;
+    top: 996px;
+    left: 772px;
 }
 
-.imagenlogo{
-    background-color:#E6E6E6;
-    text-align: center;
+.subtitulo{
+    text-align: justify;
+    background-color: #C4C4C4;
+    width: 1440px;
+    height: 30px;
+    top: 673px;
+    font-size: 20px;
+    font-style: normal;
+    color: #005677;
+    letter-spacing: 4px;
+    font-feature-settings: "cpsp";
+    line-height: 84.69%;
+
 }
 
 .piedepagina{
     background-color: #005677;
+    background-size: auto;
+    color: #FFFFFF;
     text-align: center;
+    letter-spacing: 8px;
 }
 
 #telefono{
-    color: white;
-}
-
-h2{
-    background-color: #C4C4C4;
-    color: #005677;
-    text-transform: uppercase;
-    height: 17px;
-    font-size: 20px;
     font-style: normal;
     font-weight: 700;
+    font-size: 20px;
+}
 
+#title{ 
+    font-weight: 700;
+    font-size: 35px;
+    font-style: normal;
+    font-feature-settings: "cpsp";
+    color:#005677;
+    background-color: #C4C4C4;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.imagenlogo{
+    text-align: center;
+    background-color: #E6E6E6;
+}
+
+.datosp .negrita{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+.sangria{
+    text-indent: 80px;
 }
