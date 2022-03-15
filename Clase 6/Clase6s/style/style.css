@@ -1,0 +1,38 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+#title{
+    background-color: #C4C4C4;
+    color: #005677;
+    font-feature-settings: "cpsp" on;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700, bold;
+    line-height: 84.69%;
+    text-align: center;
+}
+
+.imagenlogo{
+    background-color:#E6E6E6;
+    text-align: center;
+}
+
+.piedepagina{
+    background-color: #005677;
+    text-align: center;
+}
+
+#telefono{
+    color: white;
+}
+
+h2{
+    background-color: #C4C4C4;
+    color: #005677;
+    text-transform: uppercase;
+    height: 17px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+
+}
