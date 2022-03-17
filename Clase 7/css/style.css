@@ -1,0 +1,62 @@
+/* 
+    Background (propiedades abreviada => Shorthand)
+    backgroud-color
+    background-size
+    background-image
+    background-position
+*/  
+
+.fondo{
+    background-image: url('../image/NFT-X-Axie-Infinity.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid black;
+    height: 500px;
+    width: 100%;
+}
+
+.sun{
+    background-attachment: fixed;
+    background-image: url('../image/images.jpg');
+    background-color: salmon;
+    background-repeat: repeat-x;
+    background-size: auto;
+    background-position: center;
+    border: 2px solid black;
+    height: 500px;
+    opacity: 5;
+    width: 100%;
+}
+
+.fondocompuesto{
+    background-image: url('../image/images.jpg'), url('../image/NFT-X-Axie-Infinity.jpg');
+    background-color: salmon;
+    background-repeat: no-repeat;
+    background-size: auto, auto;
+    background-position: center;
+    border: 2px solid black;
+    height: 500px;
+    opacity: 7;
+    width: 100%;
+}
+
+.fondo-gradiente{
+    background: linear-gradient(to bottom, red 40%, green 15%, blue);
+    border: 2px solid black;
+    height: 500px;
+    opacity: 7;
+    width: 100%;
+}
+
+.fondo-radiant{
+    background-image: radial-gradient(closest-side at 60% 55%, blue, green, yellow, black);
+    border: 2px solid black;
+    height: 500px;
+    opacity: 10;
+    width: 100%;
+}
+
+.espacio{
+    height: 900px;
+}

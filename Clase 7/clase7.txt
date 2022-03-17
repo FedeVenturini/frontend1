@@ -1,0 +1,6 @@
+# Clase 7
+Propiedades de css
+Hablaremos sobre:
+- Propiedades background
+- Fuentes genericas
+- Librerias de Iconos

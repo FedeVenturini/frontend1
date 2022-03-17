@@ -1,0 +1,33 @@
+body{
+    font-family: 'League Spartan', sans-serif;
+}
+
+.cabecera{
+    background-image: url('../images/Shurima.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    position: relative;
+    height: 200px;
+    width: 100%;
+}
+#fotoperfil{
+    background-image: url('../images/fotoperfil.jpg');
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 200%;
+    height: 150px;
+    width: 150px;
+    left: 45%;
+    top: 25px;
+}
+
+.redes{
+    background-color: rgba(202, 92, 52, 0.781);
+    background-position: bottom;
+    height: 50px;
+    width: 100%;
+}
