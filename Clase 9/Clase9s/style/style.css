@@ -2,6 +2,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    width: 1024px;
 }
 
 .descuento{
@@ -106,7 +107,31 @@ body{
     height: 35px;
     left: 89px; 
     position: absolute;
+    text-align: center;
     width: 122px;
+}
+.nombre2{
+    bottom: 227px;
+    color: #000000;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    height: 35px;
+    left: 65px; 
+    position: absolute;
+    text-align: center;
+    width: 171px;
+}
+.texto{
+    color: #333333;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    height: 113px;
+    left: 16px;
+    position: relative;
+    top: 119px;
+    width: 267px;
 }
 .detalle{
     bottom: 104px;
@@ -183,4 +208,23 @@ body{
     position: absolute;
     right: 671px;
     top: 16px;
+}
+
+.cuadrover{
+    background-color: #00669F;
+    height: 48.52px;
+    left: 85px;
+    position: absolute;
+    top: 461px;    
+    width: 128.78px;
+}
+
+.vermas{
+    color: #F3F3F3;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    left: 37px;
+    position: absolute;
+    top: 15px;
 }
