@@ -6,6 +6,7 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
+    width: 2056px;
 }
 
 header div{
@@ -31,7 +32,24 @@ h1{
     top: 39px;
 }
 
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
+.bottom{
+    background-image: url("../image/+.png");
+    background-color: #00669F;
+    background-repeat: no-repeat;
+    text-align: center;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    position: sticky;
+    left: 90%;
+    bottom: 40%;
+}
 
 .batman{
     background-color: #F3F3F3;
@@ -356,4 +374,30 @@ h1{
     text-align: center;
     position: relative;
     top: 36px;
+}
+
+footer{
+    background-color: #00669F;
+    display: flex;
+    height: 162px;
+    justify-items: center;
+}
+
+footer h3{
+    color: #FFF9F9;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.sponsor{
+    background-image: url("../image/github.png");
+    height: 67px;
+    width: 249px;   
+}
+
+@media screen and (max-width: 800px){
+    main {
+        flex-direction: column;
+    }
 }
