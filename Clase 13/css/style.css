@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    /*
+        1 em= 16px
+        1.5em= 24px
+        2em= 32px
+    */
+}
+.container{
+    border: 2px solid black;
+        /*
+            vw el ancho en relacion al viewport
+            vh el alto en relacion al viewport
+            % en relacion al padre
+            
+        */
+    display: flex;
+    flex-direction: row;
+    height: 800px;
+    font-size: 2em;
+    width: 100%;
+    /*
+    height: 500px;
+    width: 800px;*/
+}
+
+.box{
+    font-size: 2em;
+    height: 200px;
+    width: 100%;
+    /*height: 200px;
+    width: 50%;*/
+}
+
+.box1{
+    background-color: salmon;
+    color: white;
+}
+.box2{
+    background-color: red;
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+    .container{
+        flex-direction: column;
+    }
+}

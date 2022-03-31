@@ -1,94 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
-
 body{
     font-family: 'Roboto', sans-serif;
 }
 
-header{
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    height: 221px;
-    width: 2056px;
-}
-.descuento{
+header div{
     background-color: #D1891C;
+    color: #333333;
+    font-size: 48px;
+    font-weight: 400;
     height: 61px;
-    width: 2056px;
+    text-indent: 67px;
 }
 .titulo{
     background-color: #00669F;
-    height: 160px;
-}
+    height: 162px;
 
-.descuento p{
-    color: #333333;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 400;
-    text-indent: 67px;
 }
-
-.titulo p{
+h1{
     color: #FFFFFF;
     font-size: 72px;
     font-style: normal;
     font-weight: 400;
+    position: relative;
     text-indent: 67px;
+    top: 39px;
 }
 
-main{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 2056px;
-}
+
 
 .batman{
-    background-color: aquamarine;
-    margin: 15px;
-    height: 1364.5px;
+    background-color: #F3F3F3;
+    border-radius: 25px 25px 0 0;
+    height: 1365px;
+    margin: 100px;
     width: 805px;
 }
 
-.batman .logo{
-    border-radius: 50%;
+.batman .imagen{
+    background-image: url("../image/fondobatman.png");
+    border-radius: 25px 25px 0 0;
+    height: 493px;
+    width: 805px;
 }
+
+.corazon{
+    background-image: url("../image/corazon.png");
+    bottom: 448px;
+    height: 59px;
+    position: relative;
+    left: 40px;
+    width: 67px;
+}
+
+.batman .foto{
+    background-image: url("../image/batman.png");
+    border-radius: 100%;
+    height: 352px;
+    left: 220px;
+    margin: 0px;
+    position: relative;
+    bottom: 250px;
+    width: 352px;
+}
+
+.batman h2{
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+    text-align: center;
+    bottom: 240px;
+}
+
+.batman .texto{
+    bottom: 200px;
+    height: 348px;
+    left: 43px;
+    position: relative;
+    right: 43px;
+    width: 718px;
+}
+
+.batman .texto{
+    color: #333333;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.batman .vermas{
+    background-color: #00669F;
+    bottom: 150px;
+    height: 114px;
+    left: 229px;
+    position: relative;
+    right: 230px;
+    width: 346px;
+}
+
+.vermas p{
+    color: #F3F3F3;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    top: 36px;
+}
+
+/* -------------------------------------------- */
+
 .wonder{
-    background-color: aquamarine;
-    margin: 15px;
-    height: 1364.5px;
+    background-color: #F3F3F3;
+    border-radius: 25px 25px 0 0;
+    height: 1365px;
+    margin: 100px;
     width: 805px;
 }
 
-.wonder .logo{
-    border-radius: 50%;
-}
-
-.superman{
-    background-color: aquamarine;
-    margin: 15px;
-    height: 1364.5px;
+.wonder .imagen{
+    background-image: url("../image/fondowonder.png");
+    border-radius: 25px 25px 0 0;
+    height: 493px;
     width: 805px;
 }
 
-.superman .logo{
-    border-radius: 50%;
+.corazon{
+    background-image: url("../image/corazon.png");
+    bottom: 448px;
+    height: 59px;
+    position: relative;
+    left: 40px;
+    width: 67px;
 }
 
+.wonder .foto{
+    background-image: url("../image/wonder.png");
+    border-radius: 100%;
+    height: 352px;
+    left: 220px;
+    margin: 0px;
+    position: relative;
+    bottom: 250px;
+    width: 352px;
+}
+
+.wonder h2{
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+    text-align: center;
+    bottom: 240px;
+}
+
+.wonder .texto{
+    bottom: 200px;
+    height: 348px;
+    left: 43px;
+    position: relative;
+    right: 43px;
+    width: 718px;
+}
+
+.wonder .texto{
+    color: #333333;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.wonder .vermas{
+    background-color: #00669F;
+    bottom: 150px;
+    height: 114px;
+    left: 229px;
+    position: relative;
+    right: 230px;
+    width: 346px;
+}
+
+.vermas p{
+    color: #F3F3F3;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    top: 36px;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+
+.super{
+    background-color: #F3F3F3;
+    border-radius: 25px 25px 0 0;
+    height: 1365px;
+    margin: 100px;
+    width: 805px;
+}
+
+.super .imagen{
+    background-image: url("../image/fondosuper.png");
+    border-radius: 25px 25px 0 0;
+    height: 493px;
+    width: 805px;
+}
+
+.corazon{
+    background-image: url("../image/corazon.png");
+    bottom: 448px;
+    height: 59px;
+    position: relative;
+    left: 40px;
+    width: 67px;
+}
+
+.super .foto{
+    background-image: url("../image/super.png");
+    border-radius: 100%;
+    height: 352px;
+    left: 220px;
+    margin: 0px;
+    position: relative;
+    bottom: 250px;
+    width: 352px;
+}
+
+.super h2{
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+    text-align: center;
+    bottom: 240px;
+}
+
+.super .texto{
+    bottom: 200px;
+    height: 348px;
+    left: 43px;
+    position: relative;
+    right: 43px;
+    width: 718px;
+}
+
+.super .texto{
+    color: #333333;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.super .vermas{
+    background-color: #00669F;
+    bottom: 150px;
+    height: 114px;
+    left: 229px;
+    position: relative;
+    right: 230px;
+    width: 346px;
+}
+
+.vermas p{
+    color: #F3F3F3;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    top: 36px;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
 .harley{
-    background-color: aquamarine;
-    margin: 15px;
-    height: 1364.5px;
+    background-color: #F3F3F3;
+    border-radius: 25px 25px 0 0;
+    height: 1365px;
+    margin: 100px;
     width: 805px;
 }
 
-.harley .logo{
-    border-radius: 50%;
+.harley .imagen{
+    background-image: url("../image/fondoharley.png");
+    border-radius: 25px 25px 0 0;
+    height: 493px;
+    width: 805px;
+}
+
+.corazon{
+    background-image: url("../image/corazon.png");
+    bottom: 448px;
+    height: 59px;
+    position: relative;
+    left: 40px;
+    width: 67px;
+}
+
+.harley .foto{
+    background-image: url("../image/harley.png");
+    border-radius: 100%;
+    height: 352px;
+    left: 220px;
+    margin: 0px;
+    position: relative;
+    bottom: 250px;
+    width: 352px;
+}
+
+.harley h2{
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+    text-align: center;
+    bottom: 240px;
+}
+
+.harley .texto{
+    bottom: 200px;
+    height: 348px;
+    left: 43px;
+    position: relative;
+    right: 43px;
+    width: 718px;
+}
+
+.harley .texto{
+    color: #333333;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.harley .vermas{
+    background-color: #00669F;
+    bottom: 150px;
+    height: 114px;
+    left: 229px;
+    position: relative;
+    right: 230px;
+    width: 346px;
+}
+
+.vermas p{
+    color: #F3F3F3;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    top: 36px;
 }
