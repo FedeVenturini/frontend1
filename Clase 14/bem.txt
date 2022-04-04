@@ -1,0 +1,11 @@
+BEM
+- Bloques
+- Elementos
+- Modificadores
+
+<header class="cabecera"> /*Bloques*/
+    <img class="cabecera__logo" src="logo.png"> /*Elementos*/
+</header>
+
+
+Variable: lugar donde se modifican variables
