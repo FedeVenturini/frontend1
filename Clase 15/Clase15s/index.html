@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form action="#" method="get">
+            <fieldset class="datosp">
+                <legend>Datos personales</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" minlength="3" maxlength="50" required>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido" minlength="3" maxlength="50" required>
+                <label for="mail">E-Mail:</label>
+                <input type="email" name="email" id="mail" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Super Heroes</legend>
+                <label for="superhero" required></label>
+                <input type="radio" name="superhero" value="BM">Batman
+                <input type="radio" name="superhero" value="WM">WonderWoman
+                <input type="radio" name="superhero" value="HQ">Harley
+                <input type="radio" name="superhero" value="SM">Superman
+            </fieldset>
+
+            <fieldset class="motivo">
+                <legend>Motivo de la consulta</legend>
+                <label for="motivo"></label>
+                <select name="consulta" id="consulta">
+                    <option value="" selected>Seleccione su consulta</option>
+                    <optgroup label="Costos">
+                        <option value="$">Servicio de guardaespalda</option>
+                        <option value="F$">Servicio de animacion</option>
+                    </optgroup>
+                    <optgroup label="Pagos">
+                        <option value="tar">Me rechazo la tarjeta</option>
+                        <option value="Ban">Transferencia bancaria</option>
+                    </optgroup>
+                    <textarea name="bio" id="bio" cols="30" rows="10" required></textarea>
+                </select>
+            </fieldset>
+
+            <div class="toolbar">
+                <button type="submit">ENVIAR FORM</button>
+                <button type="reset">LIMPIAR CAMPOS</button>
+            </div>
+        </form>
+    </div>
+</html>

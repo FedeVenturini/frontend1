@@ -401,3 +401,53 @@ footer h3{
         flex-direction: column;
     }
 }
+
+.consulta{
+    font-size: 36px;
+    width: 100%;
+}
+
+fieldset input{
+    height: 50px;
+    width: 25%;
+}
+
+.datosp input{
+    display: block;
+    margin: 15px;
+}
+.radio{
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+    padding: 10px;
+}
+.radio input{
+    height: 30px;
+}
+.motivo{
+    display: flex;
+    flex-direction: column;
+}
+
+.desplegable{
+    font-size: 36px;
+}
+
+.toolbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+}
+
+.toolbar button{
+    font-size: 36px;
+}
+
+fieldset{
+    background-color: #F3F3F3;
+}
+
+.datosp{
+    background-color: #f3f3f3bd;
+}

@@ -58,8 +58,63 @@
             </div>
         </div>
         <div class="bottom"></div>
+        <div class="consulta">
+            <form action="#" method="get">
+                <fieldset class="datosp">
+                    <legend>Datos personales</legend>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" minlength="3" maxlength="50" required>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" minlength="3" maxlength="50" required>
+                    <label for="mail">E-Mail:</label>
+                    <input type="email" name="email" id="mail" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Super Heroes</legend>
+                    <div class="radio">
+                        <label for="superhero" required></label>
+                        <div>
+                            <input type="radio" name="superhero" value="BM" >Batman
+                        </div>
+                        <div>
+                            <input type="radio" name="superhero" value="WM">WonderWoman
+                        </div>
+                        <div>
+                            <input type="radio" name="superhero" value="HQ">Harley
+                        </div>
+                        <div>
+                            <input type="radio" name="superhero" value="SM">Superman
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="motivo">
+                    <legend>Motivo de la consulta</legend>
+                    <label for="motivo"></label>
+                    <select class="desplegable" name="consulta" id="consulta">
+                        <option value="" selected>Seleccione su consulta</option>
+                        <optgroup label="Costos">
+                            <option value="$">Servicio de guardaespalda</option>
+                            <option value="F$">Servicio de animacion</option>
+                        </optgroup>
+                        <optgroup label="Pagos">
+                            <option value="tar">Me rechazo la tarjeta</option>
+                            <option value="Ban">Transferencia bancaria</option>
+                        </optgroup>
+                        <textarea name="bio" id="bio" cols="30" rows="10" required></textarea>
+                    </select>
+                </fieldset>
+
+                <div class="toolbar">
+                    <button type="submit">ENVIAR FORM</button>
+                    <button type="reset">LIMPIAR CAMPOS</button>
+                </div>
+            </form>
+        </div>
     </main>
     <footer>
+        
         <h3>Todos los derechos reservados a FRONT END 1</h3>
         <div class="sponsor"></div>
     </footer>

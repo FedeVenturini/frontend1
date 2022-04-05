@@ -1,0 +1,13 @@
+body{
+    background-color: salmon;
+
+}
+
+.datosp input{
+    display: block;
+}
+
+.motivo{
+    display: flex;
+    flex-direction: column;
+}
