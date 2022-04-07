@@ -1,0 +1,385 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --color-primario: #F0A83E;
+    --color-secundario:#3C2313;
+    --color-terciario:#8A8787;
+    --color-cuarto:#222222;
+}
+
+/*---------------------------- Header -------------------------------------*/
+
+.headernegro{
+    background-color: var(--color-cuarto);
+    display: flex;
+    height: 20px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.headernegro_logo{
+    align-self: center;
+    color: white;
+    gap: 12px;
+    margin-left: 9rem;
+    text-decoration: none;
+}
+.headernegro_logo:hover{
+    color: blue;
+    transition: 0.8s;
+}
+
+.headernegro_menu{
+    align-items: center;
+    display: flex;
+    background-color: var(--color-cuarto);
+    margin-right: 9rem;
+}
+select{
+    background-color: var(--color-cuarto);
+    border: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.header_menu{
+    background-color: var(--color-primario);
+    display: flex;
+    height: 62px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header_menu_logo{
+    align-items: center;
+    color: var(--color-cuarto);
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 74px;
+    margin-left: 4rem;
+}
+.header_menu_logo span{
+    color: #FFFFFF;
+}
+.header_menu_logo::before{
+    content: url("../image/Cat.png");
+}
+.header_menu_logo::after{
+    content: url("../image/Dog.png");
+}
+.header_menu_menu{
+    align-self: center;
+    display: flex;
+    font-size: 1.3rem;
+    gap: 2rem;
+    margin-right: 4rem;
+}
+
+.header_menu_menu a{
+    color: white;
+    text-decoration: none;
+}
+.header_menu_menu a::before{
+    content: url("../image/patita.png");
+    margin: 2px;
+}
+.header_menu_menu a:hover{
+    background-color: orangered;
+    transition: 0.5s;
+}
+/*---------------------------- Menú imagen -------------------------------------*/
+.menu_principal{
+    align-items: flex-end;
+    background-image: url("../image/fondofull.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    height: 409px;
+}
+
+.menu_principal_titulo{
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    height: 45px;
+    margin-right: 1.2rem;
+    width: 365px;
+}
+.menu_principal_titulo h2{
+    font-size: 3rem;
+    font-weight: normal;
+    text-align: center;
+    align-self: center;
+}
+
+.menu_principal p{
+    font-size: 16px;
+    margin-right: 9.5rem;
+}
+
+.menu_principal button{
+    background-color: var(--color-primario);
+    border-radius: 5px;
+    color: white;
+    font-size: 1.6rem;
+    margin-right: 11.7rem;
+    padding: 15px 23px;
+    text-decoration: none;
+}
+.menu_principal button:active{
+    background-color: lightsalmon;
+    color: black;
+}
+/*----------------- Menú productos -------------------------------------*/
+
+.menu_productos{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 0 5rem 0;
+}
+
+.menu_productos h2{
+    color: var(--color-secundario);
+    font-size: 4rem;
+}
+
+.menu_productos_menu{
+    align-self: center;
+    display: flex;
+    gap: 2rem;
+}
+.menu_productos_menu a{
+    color: #666666;
+    font-size: 1.5rem;
+    text-decoration: none
+}
+.menu_productos_menu p{
+    color: #666666;
+}
+/*----------------- Menú imagenes -------------------------------------*/
+.menu_imagenes{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 0 0 7.8rem 0;
+}
+
+.menu_imagenes_prod{
+    align-items: center;
+    background-color: #FBFAF6;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 312px;
+    width: 265px;
+}
+
+.menu_imagenes_prod_chu{
+    align-items: center;
+    color: var(--color-secundario);
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.menu_imagenes_prod_com{
+    align-items: center;
+    color: var(--color-secundario);
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+.menu_imagenes_prod_jug{
+    align-items: center;
+    color: var(--color-secundario);
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+.precios{
+    color: var(--color-primario);
+    font-size: 1.5rem;
+}
+
+/*----------------- Menú Contacto -------------------------------------*/
+.menu_contacto{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 0 4rem 0;
+}
+.menu_contacto p{
+    color: var(--color-secundario);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.menu_contacto_casillero{
+    background-color: var(--color-secundario);
+    border-radius: 15px;
+    height: 40px;
+    width: 340px;
+}
+button{
+    border: none;
+}
+input{
+    color: #FFFFFF;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding-left: 1.4rem;
+}
+/*----------------- Menú Bottones -------------------------------------*/
+
+.menu_boton{
+    display: flex;
+    gap: 0.6rem;
+    justify-content: center;
+    padding: 0 0 7.5rem 0;
+}
+.menu_boton button{
+    border-radius: 15px;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 400;
+    height: 34px;
+    width: 110px;
+}
+
+.reset{
+    background-color: var(--color-terciario);
+}
+.enviar{
+    background-color: var(--color-primario);
+}
+/*----------------- Footer Sub-------------------------------------*/
+.foot_sub{
+    align-items: center;
+    background-color: var(--color-primario);
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+}
+.foot_sub_mail{
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    margin-left: 23px;
+}
+.foot_sub_mail h2{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.foot__sub{
+    margin-right: 23px;
+}
+
+.foot__sub input{
+    background-color: white;
+    border-radius: 15px;
+    color: black;
+    font-size: 0.9rem;
+    height: 40px;
+    width: 271px;
+}
+.foot__sub button{
+    background-color: var(--color-secundario);
+    border-radius: 15px;
+    color: white;
+    font-size: 0.9rem;
+    height: 34px;
+    width: 70px;
+}
+/*----------------- Footer Menu -------------------------------------*/
+.foot_menu{
+    background-color: var(--color-secundario);
+    display: flex;
+    height: 284px;
+    justify-content: space-between;
+}
+
+.foot_menu_opc{
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    margin-left: 46px;
+}
+.foot_menu_opc_logo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.foot_menu_info{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.foot_menu_info h3{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+}
+.foot_menu_info p{
+    color: #8A8787;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.foot_menu_logo{
+    align-items: center;
+    color: white;
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 74px;
+}
+.foot_menu_logo span{
+    color: var(--color-primario);
+}
+.foot_menu_logo::before{
+    content: url("../image/Cat.png");
+}
+.foot_menu_logo::after{
+    content: url("../image/Dog.png");
+}
+/*----------------- Footer Legal -------------------------------------*/
+.foot_legal{
+    background-color: black;
+    height: 20px;
+}
+.foot_legal p{
+    color: white;
+    font-size: 1rem;
+    padding: 4px 0;
+    text-align: center;
+}

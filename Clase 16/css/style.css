@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.link{
+    background-color: salmon;
+    border: 1px solid black;
+    color: white;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.link:hover{
+    padding: 40px;
+    transition: 0.8s;
+}
+
+.link:active{
+    background-color: steelblue;
+}
+
+/*
+.link:visited{
+    background-color: slategray;
+}*/
+
+#objetivo{
+    background-color: lightgreen;
+    height: 200px;
+    width: 200px;
+}
+
+#objetivo:target{
+    margin-left: 100px;
+    transition: 0.9s;
+}
+
+form{
+    background-color: #F2F2F2;
+    margin: 30px auto;
+    padding: 40px;
+    width: 50%;
+}
+
+input{
+    display: block;
+    padding: 10px;
+    margin: 10px auto;
+    width: 80%;
+}
+
+input:focus{
+    background-color: lightgray;
+    border: none;
+    outline: none;
+}
+
+form:focus-within{
+    background-color: lightsalmon;
+}
+
+a:not(.link){
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px auto;
+}
+
+input[type="checkbox"]:checked{
+
+}
+
+body{
+    padding: 10px;
+}
+.container{
+    border: 2px tomato solid;
+    margin-left: 5px;
+    margin-top: 10px;
+    padding: 20px;
+    width: 50%;
+}
+
+.box{
+    background-color: lightseagreen;
+    color: white;
+    font-weight: bold;
+    height: 50px;
+    margin-top: 5px;
+    text-align: center;
+    width: 50px;
+}
+
+/*
+.box:only-of-type{
+    background-color: lightsalmon;
+}*/
+
+/*.box:last-of-type{
+    background-color: lightcoral;
+}*/
+
+.box:first-of-type{
+    background-color: lightpink;
+}
+
+p::selection{
+    background-color: yellow;
+}
+
+p::first-letter{
+    font-size: 35px;
+}
+
+P::first-line{
+    font-style: italic;
+}
+
+input::placeholder{
+    text-align: center;
+}
+
+.price{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.price::before{
+    content: "$";
+}
+
+.price::after{
+    content: ",00";
+}
