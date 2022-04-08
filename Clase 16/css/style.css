@@ -63,6 +63,13 @@ form:focus-within{
     background-color: lightsalmon;
 }
 
+a:not(.link){
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px auto;
+}
+
 body{
     padding: 10px;
 }
