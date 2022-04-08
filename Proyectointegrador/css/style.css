@@ -111,18 +111,15 @@ html{
     width: 45%;
 }
 .home_graphic_graph{
-    border: 1px solid black;
-    height: 50%;
-}
-.home_graphic_value{
-    border: 1px solid black;
-    height: 50%;
+    background-image: url(../image/graficos.svg);
+    background-position: center;
+    background-size: cover;
+    height: 52.5rem;
 }
 
 /*---------------------------- Us ----------------------------------------*/
 
 .us{
-    border: 1px solid black;
     display: flex;
     height: 549px;
     justify-content: center;
@@ -130,10 +127,23 @@ html{
 }
 
 .us_manage{
-    border: 1px solid black;
     width: 40%;
 }
-
+.us_manage__title{
+    color: var(--color-secundario);
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 114%;
+    width: 43.5rem;
+}
+.us_manage__frase{
+    color: var(--color-cuarto);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    padding-top: 3.6rem;
+    width: 33.7rem;
+}
 .us_point{
     border: 1px solid black;
     width: 40%;
