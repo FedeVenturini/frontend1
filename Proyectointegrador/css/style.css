@@ -23,13 +23,14 @@ html{
     --color-quinto: rgb(255, 239, 234);
     --color-sexto: rgb(249, 249, 249);
 }
-/*---------------------------- Header ----------------------------------------*/
+/*---------------------------- Header - Aca va el logo, menu opciones y boton inicio ----------------------------------------*/
 
 .header_menu{
     align-items: center;
     display: flex;
     height: 17.4rem;
     justify-content: space-around;
+    margin-bottom: 10rem;
 }
 
 .header_menu_img{
@@ -56,16 +57,17 @@ html{
     width: 33.3%;
 }
 
-.header_menu button{
+.getstarted{
     background-color: var(--color-primario);
     border: none;
     border-radius: 50px;
+    box-shadow: 0px 4px 8px rgba(243, 96, 59, 0.5);
     color: var(--color-quinto);
     height: 4.4rem;
     width: 13.4rem;
 }
 
-/*---------------------------- Home ----------------------------------------*/
+/*---------------------------- Home - Presentacion y grafico demostrativo ----------------------------------------*/
 
 .home{
     display: flex;
@@ -96,15 +98,6 @@ html{
     width: 50%;
 }
 
-.home_frase button{
-    background-color: var(--color-primario);
-    border: none;
-    border-radius: 5rem;
-    color: var(--color-quinto);
-    height: 4.4rem;
-    width: 13.4rem;
-}
-
 .home_graphic{
     display: flex;
     flex-direction: column;
@@ -117,12 +110,13 @@ html{
     height: 52.5rem;
 }
 
-/*---------------------------- Us ----------------------------------------*/
+/*---------------------------- Us - Presentacion ----------------------------------------*/
 
 .us{
     display: flex;
     height: 549px;
     justify-content: center;
+    margin-top: 5rem;
     padding: 3.5rem;
 }
 
@@ -145,17 +139,282 @@ html{
     width: 33.7rem;
 }
 .us_point{
-    border: 1px solid black;
-    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 600px;
+}
+.us_point__bloque{
+    align-items: flex-start;
+    display: flex;
+    height: 11rem;
+    gap: 3rem;
+}
+.us_point__text{
+    width: 437px;
+} 
+.us_point__bloque button{
+    background-color: var(--color-primario);
+    border: none;
+    border-radius: 5rem;
+    box-shadow: 0px 4px 8px rgba(243, 96, 59, 0.5);
+    color: var(--color-quinto);
+    height: 43px;
+    width: 69px;
 }
 
+.us_point__bloque h3{
+    color: var(--color-secundario);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.us_point__bloque p{
+    color: var(--color-tercero);
+    font-size: 1.63rem;
+    font-weight: 500;
+    padding-top: 1.5rem;
+}
 /*---------------------------- Comments ----------------------------------------*/
 
 .comments{
-    border: 1px solid black;
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 47.8rem;
-    padding: 5rem;
+    height: 60rem;
+    padding: 0 5rem;
+    margin-bottom: 18rem;
+}
+
+.comments__title{
+    color: var(--color-secundario);
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 1rem 0 7rem 0;
+}
+
+.comments_opinion{
+    display: flex;
+    gap: 1rem;
+    margin: 5rem 0 9rem 0;
+}
+
+.comments_container__ali{
+    display: flex;
+    align-items: flex-end;
+    background-image: url("../image/avatar-ali.png");
+    background-position: top;
+    background-size: 20%;
+    background-repeat: no-repeat;
+    height: 25rem;
+    width: 44.5rem;
+}
+.comments_container__anisha{
+    display: flex;
+    align-items: flex-end;
+    background-image: url("../image/avatar-anisha.png");
+    background-position: top;
+    background-size: 20%;
+    background-repeat: no-repeat;
+    height: 25rem;
+    width: 44.5rem;
+}
+.comments_container__richard{
+    display: flex;
+    align-items: flex-end;
+    background-image: url("../image/avatar-richard.png");
+    background-position: top;   
+    background-size: 20%;
+    background-repeat: no-repeat;
+    height: 25rem;
+    width: 44.5rem;
+}
+.comments_opinion_text{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 22rem;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.comments_opinion_text h3{
+    color: var(--color-secundario);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.comments_opinion_text p{
+    color: #B9B9C1;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 25px;
+    margin: 20px 0px 10px 0px;
+    text-align: center;
+}
+/*--------------------------------------- Footer ------------------------------------*/
+.simplify{
+    align-items: center;
+    background-color: var(--color-primario);
+    display: flex;
+    justify-content: center;
+    height: 224px;
+}
+
+.simplify_menu{
+    align-items: center;
+    display: flex;
+    height: 96px;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.simplify_menu_p{
+    color: var(--color-quinto);
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+    width: 438px;
+}
+
+.simplify_menu_button{
+    background-color: var(--color-quinto);
+    border: none;
+    border-radius: 5rem;
+    box-shadow: 0px 4px 8px rgba(245, 245, 245, 0.5);
+    color: var(--color-primario);
+    height: 4.4rem;
+    width: 13.4rem;
+}
+
+/*------------------------------------------- Footer redes ------------------------------------------*/
+
+.social{
+    background-color: var(--color-cuarto);
+    display: flex;
+    height: 247px;
+}
+.social_media{
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 25%;
+}
+.social_menu{
+    align-items: center;
+    display: flex;  
+    justify-content: space-evenly;
+    width: 50%;
+}
+.social_menu_nav{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.social_menu_nav a{
+    color: var(--color-quinto);
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+.social_copy{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    justify-content: center;
+    width: 25%;
+}
+.social_media img{
+    max-height: 2.4rem;
+    max-width: 12rem;
+}
+.social_media_logos{
+    color: var(--color-quinto);
+    height: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1.3rem;
+    height: 20px;
+    margin-right: 10px;
+    width: 2rem;
+}
+
+.social_copy_send input{
+    border: none;
+    border-radius: 5rem;
+    height: 4.5rem;
+    width: 20rem;
+}
+input::placeholder{
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+.social_copy_send button{
+    background-color: var(--color-primario);
+    border: none;
+    border-radius: 5rem;
+    box-shadow: 0px 4px 8px rgba(243, 96, 59, 0.5);
+    color: var(--color-quinto);
+    height: 4.2rem;
+    width: 6.3rem;
+}
+
+.social_copy p{
+    color: var(--color-tercero);
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+/*--------------- Seccion pseudo selectores -------------------------------------------*/
+button:hover {
+    color: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+} 
+
+a:hover{
+    color: var(--color-primario);
+}
+
+i:hover{
+        box-shadow: 0 4px 16px rgb(255, 255, 255);
+        transition: all 0.2s ease;
+    }
+
+/* ------------------- Media Queries -------------------*/
+
+@media screen and (max-width: 800px) {
+    /*---- MQ header ----*/
+    .header_menu nav{
+        display: none;
+    }
+    
+    .header_menu button{
+        display: none;
+    }
+
+    /*---- MQ main home ----*/
+
+    .home{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /*---- MQ main us ----*/
+
+    .us{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*---- MQ footer simplify ----*/
+    .simplify{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social{
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
