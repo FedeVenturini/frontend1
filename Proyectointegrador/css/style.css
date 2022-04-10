@@ -66,6 +66,9 @@ html{
     height: 4.4rem;
     width: 13.4rem;
 }
+.getstarted-mobile{
+    display: none;
+}
 
 /*---------------------------- Home - Presentacion y grafico demostrativo ----------------------------------------*/
 
@@ -84,15 +87,15 @@ html{
 
 .home_frase h2{
     color: var(--color-secundario);
-    height: 19.8rem;
     font-size: 5.8rem;
     font-weight: 700;
+    height: 19.8rem;
 }
 
 .home_frase p{
-    height: 7rem;
     font-size: 1.655rem;
     font-weight: 500;
+    height: 7rem;
     line-height: 150%;
     text-align: left;
     width: 50%;
@@ -200,32 +203,32 @@ html{
 }
 
 .comments_container__ali{
-    display: flex;
     align-items: flex-end;
     background-image: url("../image/avatar-ali.png");
     background-position: top;
     background-size: 20%;
     background-repeat: no-repeat;
+    display: flex;
     height: 25rem;
     width: 44.5rem;
 }
 .comments_container__anisha{
-    display: flex;
     align-items: flex-end;
     background-image: url("../image/avatar-anisha.png");
     background-position: top;
     background-size: 20%;
     background-repeat: no-repeat;
+    display: flex;
     height: 25rem;
     width: 44.5rem;
 }
 .comments_container__richard{
-    display: flex;
     align-items: flex-end;
     background-image: url("../image/avatar-richard.png");
     background-position: top;   
     background-size: 20%;
     background-repeat: no-repeat;
+    display: flex;
     height: 25rem;
     width: 44.5rem;
 }
@@ -312,6 +315,10 @@ html{
     flex-direction: column;
     gap: 1.5rem;
 }
+.social_menu_right{
+    position: relative;
+    bottom: 15px;
+}
 .social_menu_nav a{
     color: var(--color-quinto);
     font-size: 1.6rem;
@@ -383,7 +390,10 @@ i:hover{
 
 /* ------------------- Media Queries -------------------*/
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 550px) and (max-width: 800px) {
+    body{
+        width: 100%;
+    }
     /*---- MQ header ----*/
     .header_menu nav{
         display: none;
@@ -392,29 +402,112 @@ i:hover{
     .header_menu button{
         display: none;
     }
+    .getstarted-mobile{
+    height: auto;
+    width: auto;
+    }
 
     /*---- MQ main home ----*/
-
+    
     .home{
+        align-items: center;
         display: flex;
         flex-direction: column-reverse;
+        height: 100%;
+        justify-content: center;
+        max-width: 800px;
+        width: 100%;
+    }
+
+.home_frase{
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+.home_frase p{
+    text-align: center;
+    width: 100%;
+}
+.home_frase div{
+    width: 100%;
+}
+    .home_graphic{
+        width: 100%;
+    }
+    .home_graphic_graph{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        max-width: 800px;
     }
 
     /*---- MQ main us ----*/
-
     .us{
+        align-items: center;
         display: flex;
         flex-direction: column;
+        height: 100%;
     }
-
+    .us_manage{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5rem;
+        padding: 0 6rem;
+        width: 100%;
+    }
+    .us_point__text h3{
+        background-color: rgba(242, 95, 58, 0.8);
+    }
+    /*---- MQ main us ----*/
+    .comments{
+        margin-bottom: 10rem;
+    }
+    .comments_container__anisha{
+        display: none;
+    }
+    .comments_container__richard{
+        display: none;
+    }
     /*---- MQ footer simplify ----*/
     .simplify{
+        height: 100%;
+        width: 100%;
+    }
+    .simplify_menu{
+        align-items: center;
         display: flex;
         flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        width: 100%;
+    }
+    .simplify_menu_p{
+        width: 50%;
     }
 
+    /*---- MQ footer Social ----*/
     .social{
+        align-items: center;
         display: flex;
         flex-direction: column-reverse;
+        height: 100%;
+        padding: 5rem;
+    }
+    .social_copy{
+        width: 100%;
+    }
+    .social_copy p{
+        display: none;
+    }
+
+    .social_menu{
+        padding-bottom: 5rem;
+    }
+
+    .social_media{
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 3rem;
     }
 }
