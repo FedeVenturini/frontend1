@@ -23,7 +23,9 @@ html{
     --color-quinto: rgb(255, 239, 234);
     --color-sexto: rgb(249, 249, 249);
 }
-/*---------------------------- Header - Aca va el logo, menu opciones y boton inicio ----------------------------------------*/
+/*---------------------------- Header
+Aca va el logo, menu opciones y boton inicio. Tambien la hamburgesa, para que se vea en version mobile
+----------------------------------------*/
 
 .header_menu{
     align-items: center;
@@ -67,14 +69,16 @@ html{
     width: 13.4rem;
 }
 .getstarted-mobile{
+    align-items: center;
     display: none;
 }
 
-/*---------------------------- Home - Presentacion y grafico demostrativo ----------------------------------------*/
+/*------------------------------- Home - Presentacion y grafico demostrativo ----------------------------------------*/
 
 .home{
     display: flex;
     justify-content: center;
+    height: 100%;
     padding: 3.5rem;
 }
 
@@ -102,8 +106,6 @@ html{
 }
 
 .home_graphic{
-    display: flex;
-    flex-direction: column;
     width: 45%;
 }
 .home_graphic_graph{
@@ -372,6 +374,13 @@ input::placeholder{
     font-size: 1.25rem;
     font-weight: 500;
 }
+.copy-mobile{
+    color: var(--color-tercero);
+    display: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 2rem;
+}
 /*--------------- Seccion pseudo selectores -------------------------------------------*/
 button:hover {
     color: rgba(255, 255, 255, 1) !important;
@@ -388,126 +397,124 @@ i:hover{
         transition: all 0.2s ease;
     }
 
-/* ------------------- Media Queries -------------------*/
-
-@media screen and (min-width: 550px) and (max-width: 800px) {
-    body{
-        width: 100%;
-    }
-    /*---- MQ header ----*/
-    .header_menu nav{
-        display: none;
-    }
+    @media screen and (min-width: 550px) and (max-width: 800px) {
+        body{
+            width: 100%;
+        }
+        /*---- MQ header ----*/
+        .header_menu nav{
+            display: none;
+        }
+        
+        .header_menu button{
+            display: none;
+        }
+        .getstarted-mobile{
+        display: block;
+        }
+        /*---- MQ main home ----*/
+        
+        .home{
+            align-items: center;
+            display: flex;
+            flex-direction: column-reverse;
+            height: 100%;
+            justify-content: center;
+            max-width: 800px;
+            width: 100%;
+        }
     
-    .header_menu button{
-        display: none;
-    }
-    .getstarted-mobile{
-    height: auto;
-    width: auto;
-    }
+        .home_frase{
+            height: 100%;
+            text-align: center;
+            width: 100%;
+        }
+        .home_frase p{
+            text-align: center;
+            width: 100%;
+        }
+        .home_frase div{
+            width: 100%;
+        }
+        .home_graphic{
+            width: 100%;
+        }
+        .home_graphic_graph{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            max-width: 800px;
+        }
 
-    /*---- MQ main home ----*/
     
-    .home{
-        align-items: center;
-        display: flex;
-        flex-direction: column-reverse;
-        height: 100%;
-        justify-content: center;
-        max-width: 800px;
-        width: 100%;
-    }
+        /*---- MQ main us ----*/
+        .us{
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+                height: 100%;
+        }
+            .us_manage{
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 5rem;
+                padding: 0 6rem;
+                width: 100%;
+            }
+            .us_point__text h3{
+                background-color: rgba(242, 95, 58, 0.8);
+            }
+            /*---- MQ main us ----*/
+            .comments{
+                margin-bottom: 10rem;
+            }
+            .comments_container__ar{
+                display: none;
+            }
+            /*---- MQ footer simplify ----*/
+            .simplify{
+                height: 100%;
+                width: 100%;
+            }
+            .simplify_menu{
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                justify-content: center;
+                width: 100%;
+            }
+            .simplify_menu_p{
+                width: 50%;
+            }
+        
+            /*---- MQ footer Social ----*/
+            .social{
+                align-items: center;
+                display: flex;
+                flex-direction: column-reverse;
+                height: 100%;
+                padding: 5rem;
+            }
+            .social_copy{
+                width: 100%;
+            }
+            .social_copy p{
+                display: none;
+            }
+        
+            .social_menu{
+                padding-bottom: 5rem;
+            }
+        
+            .social_media{
+                align-items: center;
+                flex-direction: column-reverse;
+                gap: 3rem;
+            }
 
-.home_frase{
-    height: 100%;
-    text-align: center;
-    width: 100%;
-}
-.home_frase p{
-    text-align: center;
-    width: 100%;
-}
-.home_frase div{
-    width: 100%;
-}
-    .home_graphic{
-        width: 100%;
-    }
-    .home_graphic_graph{
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        max-width: 800px;
-    }
-
-    /*---- MQ main us ----*/
-    .us{
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-    }
-    .us_manage{
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 5rem;
-        padding: 0 6rem;
-        width: 100%;
-    }
-    .us_point__text h3{
-        background-color: rgba(242, 95, 58, 0.8);
-    }
-    /*---- MQ main us ----*/
-    .comments{
-        margin-bottom: 10rem;
-    }
-    .comments_container__anisha{
-        display: none;
-    }
-    .comments_container__richard{
-        display: none;
-    }
-    /*---- MQ footer simplify ----*/
-    .simplify{
-        height: 100%;
-        width: 100%;
-    }
-    .simplify_menu{
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        justify-content: center;
-        width: 100%;
-    }
-    .simplify_menu_p{
-        width: 50%;
-    }
-
-    /*---- MQ footer Social ----*/
-    .social{
-        align-items: center;
-        display: flex;
-        flex-direction: column-reverse;
-        height: 100%;
-        padding: 5rem;
-    }
-    .social_copy{
-        width: 100%;
-    }
-    .social_copy p{
-        display: none;
-    }
-
-    .social_menu{
-        padding-bottom: 5rem;
-    }
-
-    .social_media{
-        align-items: center;
-        flex-direction: column-reverse;
-        gap: 3rem;
-    }
+            .copy-mobile{
+                display: block;
+            }
 }
